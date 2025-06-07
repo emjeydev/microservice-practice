@@ -1,5 +1,5 @@
 package dev.emjey.productservice.exception.enums;
 
-public interface IFriendlyMessage {
+public interface IFriendlyMessageCode {
     int getFriendlyMessageCode();
 }
