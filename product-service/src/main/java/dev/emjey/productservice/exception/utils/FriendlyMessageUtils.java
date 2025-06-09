@@ -24,8 +24,8 @@ public class FriendlyMessageUtils {
             messageKey = messageCode.getClass().getSimpleName() + SPECIAL_CHARACTER + messageCode;
             return resourceBundle.getString(messageKey);
         } catch (MissingResourceException missingResourceException) {
-            log.error("Friendly message not found for key {}", language.name(), missingResourceException);
-            return null
+            log.error("Friendly message not found for key {}", messageKey, missingResourceException);
+            return null;
         }
     }
 }
